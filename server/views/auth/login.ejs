@@ -1,3 +1,11 @@
+<!-- 
+
+File Name: app.js
+Name: Sandip Mishra
+Id: 301235936
+Date: 30 October 2022
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,7 +15,7 @@
   <body id="page-top">
     <!--Navigation-->
     <% include ../partials/navbar.ejs %>
-<!--service Grid Section-->
+<!--login Section-->
 <section class="portfolio" id="portfolio">
    <div class="container">
      <% if(messages.length>0) {%>
@@ -21,6 +29,8 @@
        <div class="offset-md-4 col-md-4">
         <form method="POST" autocomplete="off">
           <fieldset class="form-group">
+
+            <!-- username field -->
             <label for="username">Username: </label>
             <input
               type="text"
@@ -33,7 +43,7 @@
             />
           </fieldset>
           <br>
-  
+                <!-- passport field -->
           <fieldset class="form-group">
             <label for="password">Password: </label>
             <input

@@ -1,3 +1,10 @@
+
+/*
+File Name: app.js
+Name: Sandip Mishra
+Id: 301235936
+Date: 30 October 2022
+*/
 // require modules for the User Model
 let mongoose = require("mongoose");
 let passportLocalMongoose = require("passport-local-mongoose");
@@ -46,7 +53,7 @@ let User = mongoose.Schema(
 
 // configure options for User Model
 
-let options = { missingPasswordError: "Wrong / Missing Password" };
+let options = { missingPasswordError: "Wrong Password" };
 
 User.plugin(passportLocalMongoose, options);
 
