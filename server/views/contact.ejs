@@ -23,7 +23,7 @@
               action=""
               method="post"
             > -->
-            <form action="" method="post">
+            <form action="/contact" method="post">
               <div class="control-group">
                 <div
                   class="form-group floting-label-form-group controls mb-0 pb-2"
@@ -38,7 +38,7 @@
                     id="firstName"
                     name="firstName"
                     type="text"
-                    placeholder="First Name"
+                    placeholder="First Name:"
                     required="required"
                   />
                   <p class="help-block text-danger"></p>
@@ -59,7 +59,7 @@
                     id="lastName"
                     name="lastName"
                     type="text"
-                    placeholder="Last Name"required="required"
+                    placeholder="Last Name:"required="required"
                   />
                   <p class="help-block text-danger"></p>
                 </div>
@@ -71,14 +71,14 @@
                 <div
                   class="form-group floting-label-form-group controls mb-0 pb-2"
                 >
-                  <label for="firstName">Email:*</label>
+                  <label for="email">Email:*</label>
                   <br>
                   <input
                     class="form-contol"
                     id="email"
                     name="email"
                     type="text"
-                    placeholder="Email"required="required"
+                    placeholder="Email:"required="required"
                   />
                   <p class="help-block text-danger"></p>
                 </div>
@@ -98,7 +98,7 @@
                     id="email"
                     name="number"
                     type="text"
-                    placeholder="number" 
+                    placeholder="Number:" 
                   />
                   <p class="help-block text-danger"></p>
                 </div>
@@ -119,11 +119,7 @@
               </div>
               <br />
 
-              <div class="form-group">
-               <a href="/home"><button type="submit" class="btn btn-primary" btn-xl btn-block>
-                Send
-              </button></a> 
-              </div>
+              <input type="submit" class="btn btn-primary" value="Submit">
             </form>
           </div>
           <div class="col-lg mx-auto  ">

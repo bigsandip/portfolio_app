@@ -29,10 +29,6 @@ router.get("/contact", indexController.displayContactpage);
 
 /* POST contact us page and redirect to home page */
 router.post("/contact", indexController.submitContactpage);
-// router.post('/contact', (req, res) => {
-//     console.log(req.body);      
-//     res.render('index', { title: 'Home'});
-//   });
 
 /* GET Route for displaying the Login page */
 router.get("/login", indexController.displayLoginPage);
