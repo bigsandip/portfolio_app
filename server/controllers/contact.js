@@ -41,7 +41,7 @@ module.exports.addprocesspage = (req, res, next) => {
       res.end(err);
     } else {
       // refresh the contact list
-      res.redirect("/business-contacts-list");
+      res.redirect("/contacts-list");
     }
   });
 };
