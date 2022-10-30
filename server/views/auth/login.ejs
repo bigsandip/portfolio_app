@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include ../partials/header.ejs %>
+  </head>
+<br><br>
+  <body id="page-top">
+    <!--Navigation-->
+    <% include ../partials/navbar.ejs %>
+<!--service Grid Section-->
+<section class="portfolio" id="portfolio">
+   <div class="container">
+     <% if(messages.length>0) {%>
+      <div class="alert alert-danger"><%= messages %></div>
+      <% } %>
+     <h2 class="text-center text-uppercase text-secondary text-white  mb-0">
+       Login
+     </h2>
+     <hr class="star-dark mb-5" />
+     <div class="row">
+       <div class="offset-md-4 col-md-4">
+        <form method="POST" autocomplete="off">
+          <fieldset class="form-group">
+            <label for="username">Username: </label>
+            <input
+              type="text"
+              class="form-control"
+              name="username"
+              placeholder="Enter username"
+              id="username"
+              required
+              autofocus
+            />
+          </fieldset>
+          <br>
+  
+          <fieldset class="form-group">
+            <label for="password">Password: </label>
+            <input
+              type="password"
+              class="form-control"
+              name="password"
+              placeholder="Enter password"
+              id="password"
+              required
+            />
+            <br>
+  
+          <fieldset class="form-group text-right">
+            <input type="submit" class="btn btn-success" value="Login" />
+            <a href="/">
+              <input type="button" class="btn btn-warning" value="Cancel" />
+            </a>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+ </section>
+
+     <!--Footer-->
+     <% include ../partials/footer.ejs %>
+   </body>
+ </html>
+ 
